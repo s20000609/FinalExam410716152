@@ -1,0 +1,13 @@
+﻿@model FinalExam410716152.ViewModels.TitleData
+
+<h2>Creat</h2>
+
+@using (Html.BeginForm("Title","New",FormMethod.Post))
+            {
+<p>@Html.DisplayNameFor(a => a.Title):@Html.TextBoxFor(m => m.Title) @Html.ValidationMessageFor(m => m.Title)</p>
+<p>@Html.DisplayNameFor(a => a.Result):@Html.TextBoxFor(m => m.Result) @Html.ValidationMessageFor(m => m.Result)</p>
+<p>@Html.DisplayNameFor(a => a.Date):@Html.TextBoxFor(m => m.Date) @Html.ValidationMessageFor(m => m.Date)</p>
+    
+<input type="submit" name="name" value="Create" />
+
+}
